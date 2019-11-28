@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>User Management - Login!!!</title>
+    <script type="text/javascript" src="authentication.js"></script>
+    <script type="text/javascript" src="utils.js"></script>
+
+
+</head>
+<body>
+    <h1>Login</h1>
+
+    <label>User Name : </label> : <input type="text" id= "username"/>
+    <label>Password : </label><input type="password" id="password"/>
+    <label id="error"></label>
+    <input type="button" value="Submit" onclick="authenticate()"/>
+
+</body>
+<script type="text/javascript">
+    console.log(getUrlParameter("error"))
+
+let error = getUrlParameter("error");
+
+if(error){
+    document.getElementById("error").innerHTML = error;
+}
+
+</script>
+</html>

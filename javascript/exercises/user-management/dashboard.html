@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>User Management - Dashboard!!!</title>
+    <script type="text/javascript" src="utils.js"></script>
+</head>
+<body>
+    <h1>Dashboard</h1>
+    <label id="user_type"></label>
+
+</body>
+<script type="text/javascript">
+
+let type = getUrlParameter("type");
+
+if(type){
+    document.getElementById("user_type").innerHTML = type;
+}
+
+</script>
+</html>
